@@ -41,3 +41,11 @@ function closeMenu() {
   hamburger.classList.remove("active");
   navMenu.classList.remove("active");
 }
+
+// window.addEventListener("resize", imageHeight);
+// function imageHeight() {
+//   console.log("t");
+//   let parentHeight = document.querySelector(".header-img").offsetHeight;
+//   document.getElementsByClassName("header_img").style.height =
+//     document.querySelector(".header-img").offsetHeight + 90;
+// }
