@@ -7,21 +7,17 @@ const list = document.querySelector(".nav-select-options");
 const arrowUpDown = document.querySelector(".arrowUpDown");
 
 const text = document.querySelector(".select_text");
-// const hide = document.querySelector(".hide");
-
 // toggle select list
 navSelect.onclick = function () {
   list.classList.toggle("hide");
   arrowUpDown.classList.toggle("rotate");
 };
-
 // select option urdu english arabic
 for (option of options) {
   option.onclick = function () {
     langSet.innerHTML = this.textContent;
     list.classList.toggle("hide");
     arrowUpDown.classList.toggle("rotate");
-    // console.log("click");
   };
 }
 
@@ -41,11 +37,3 @@ function closeMenu() {
   hamburger.classList.remove("active");
   navMenu.classList.remove("active");
 }
-
-// window.addEventListener("resize", imageHeight);
-// function imageHeight() {
-//   console.log("t");
-//   let parentHeight = document.querySelector(".header-img").offsetHeight;
-//   document.getElementsByClassName("header_img").style.height =
-//     document.querySelector(".header-img").offsetHeight + 90;
-// }
