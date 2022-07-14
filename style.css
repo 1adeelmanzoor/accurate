@@ -392,9 +392,28 @@ body {
 .role-content {
   display: flex;
 }
+/* .role-content-icon {
+  margin-right: 10px;
+  margin-top: 2px;
+} */
+
 .role-content-icon {
   margin-right: 10px;
   margin-top: 2px;
+  width: 24px;
+  height: 24px;
+  background: #267c26;
+
+  -webkit-mask-image: url(images/arrow-right.svg);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: top right;
+  mask-image: url(images/arrow-right.svg);
+  mask-repeat: no-repeat;
+  mask-position: top;
+}
+
+.scl-change-icon-color {
+  background: yellow;
 }
 .role_learn_more {
   cursor: pointer;
