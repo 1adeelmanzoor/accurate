@@ -10,7 +10,6 @@ html {
 }
 body {
   font-family: "Roboto", sans-serif;
-  /* background: #f06d06; */
 }
 .container {
   min-width: 320px;
@@ -22,6 +21,7 @@ body {
   width: 100%;
 }
 .navbar-container {
+  position: fixed;
   width: 100%;
   background-color: #ffffff;
   padding-top: 30px;
@@ -51,6 +51,7 @@ body {
   display: flex;
   align-items: center;
   gap: 30px;
+  padding: 5px;
 }
 .nav-select {
   cursor: pointer;
@@ -59,11 +60,12 @@ body {
 }
 
 .nav-select-options {
+  width: 90px;
+
   flex-direction: column;
   position: absolute;
   gap: 10px !important;
-  width: 61px;
-  background: rgb(236, 235, 235);
+  background: #fff;
 }
 .hide {
   visibility: hidden;
@@ -75,6 +77,9 @@ body {
   transform: rotate(180deg);
 }
 .nav-select-options li {
+  background: #f5f9fc;
+  border-radius: 10px;
+
   width: 100%;
   text-align: center;
 }
@@ -124,6 +129,7 @@ body {
 
 /* nav end */
 .header-content-img {
+  padding-top: 100px;
   width: 84%;
   display: flex;
   margin: auto;
@@ -392,11 +398,11 @@ body {
 .role-content {
   display: flex;
 }
-/* .role-content-icon {
+.role-content-icon {
   margin-right: 10px;
   margin-top: 2px;
-} */
-
+}
+/* 
 .role-content-icon {
   margin-right: 10px;
   margin-top: 2px;
@@ -410,7 +416,7 @@ body {
   mask-image: url(images/arrow-right.svg);
   mask-repeat: no-repeat;
   mask-position: top;
-}
+} */
 
 .scl-change-icon-color {
   background: yellow;
@@ -664,6 +670,7 @@ ul .contact {
 
 @media (max-width: 1023px) {
   .nav-link ul li a {
+    padding: 5px;
     font-size: 1.2rem;
   }
   .log_img {
@@ -876,7 +883,7 @@ ul .contact {
 
   /* header section  */
   .header-content-img {
-    padding-top: 48px;
+    padding-top: 100px;
   }
   .header-content-img {
     flex-direction: column;
