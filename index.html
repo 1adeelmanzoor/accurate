@@ -210,7 +210,7 @@
                         </h1>
                     </div>
 
-                    <div class="main-role-manage-container">
+                    <div class="main-role-manage-container" id="amContainer">
                         <div class="main-role-manage-own-content">
                             <div class="main-role-manage-own">
                                 <!-- own -->
@@ -645,12 +645,12 @@
                         </h1>
                     </div>
 
-                    <div class="main-role-manage-container">
+                    <div class="main-role-manage-container" id="lpContainer">
                         <div class="main-role-manage-own-content reverse-row">
                             <div class="main-role-manage-own">
                                 <!-- own -->
-                                <div class="role-own Lesson-Planner active"
-                                    onclick="openLessonPlaner(event,'School',
+                                <div class="role-own Lesson-Planner activel"
+                                    onclick="openLessonPlaner(event,'Schooll',
                                     '#f5f9fc','#267c26')">
                                     <div class="role-own_icon school-icon">
                                         <img class="role-own_icon_img"
@@ -665,7 +665,7 @@
                                 </div>
                                 <!-- teacher -->
                                 <div class="role-own Lesson-Planner"
-                                    onclick="openLessonPlaner(event,'Teacher',
+                                    onclick="openLessonPlaner(event,'Teacherl',
                                     '#FCF6EF','#FEC952')">
                                     <div class="role-own_icon teacher-icon">
                                         <img src="images/rule_teacher.svg"
@@ -678,7 +678,7 @@
                                 </div>
                                 <!-- parents -->
                                 <div class="role-own Lesson-Planner"
-                                    onclick="openLessonPlaner(event,'Parents',
+                                    onclick="openLessonPlaner(event,'Parentsl',
                                     '#FFF3F2','#FA6758')">
                                     <div class="role-own_icon parent-icon">
                                         <img src="images/rule_parent.svg"
@@ -691,7 +691,7 @@
                                 </div>
                                 <!-- student -->
                                 <div class="role-own Lesson-Planner"
-                                    onclick="openLessonPlaner(event,'Students',
+                                    onclick="openLessonPlaner(event,'Studentsl',
                                     '#F1F9FE','#62B8F3')">
                                     <div class="role-own_icon student-icon">
                                         <img src="images/rule_student.svg"
@@ -704,101 +704,9 @@
                                 </div>
                             </div>
                             <!-- rule text  -->
-
-                            <!-- <div class="main-role-manage-content">
-
-                                <div class="role-content">
-                                    <div class="role-content-icon">
-                                        <img src="images/arrow-right.svg"
-                                            alt="not
-                                            found">
-                                    </div>
-                                    <div class="role-content-text">
-                                        <p class="para_b">
-                                            Lorem ipsum dolor sit amet,
-                                            consectetur
-                                            adipiscing elit. Egestas
-
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="role-content">
-                                    <div class="role-content-icon">
-                                        <img src="images/arrow-right.svg"
-                                            alt="not
-                                            found">
-                                    </div>
-                                    <div class="role-content-text">
-                                        <p class="para_b">
-                                            Lorem ipsum dolor sit amet,
-                                            consectetur
-                                            adipiscing elit. Egestas orci
-                                            viverra
-                                            arcu, purus dictum ac dictumst in
-                                            quis.
-                                            Integer.
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="role-content">
-                                    <div class="role-content-icon">
-                                        <img src="images/arrow-right.svg"
-                                            alt="not
-                                            found">
-                                    </div>
-                                    <div class="role-content-text">
-                                        <p class="para_b">
-                                            Lorem ipsum dolor sit amet,
-                                            consectetur
-                                            adipiscing elit. Egestas orci
-                                            viverra
-                                            arcu, purus dictum ac dictumst in
-                                            quis.
-                                            Integer.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="role-content">
-                                    <div class="role-content-icon">
-                                        <img src="images/arrow-right.svg"
-                                            alt="not
-                                            found">
-                                    </div>
-                                    <div class="role-content-text">
-                                        <p class="para_b">
-                                            Lorem ipsum dolor sit amet,
-                                            consectetur
-                                            adipiscing elit. Egestas orci
-                                            viverra
-                                            arcu, purus dictum ac dictumst in
-                                            quis.
-                                            Integer.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="role-content">
-                                    <div class="role-content-icon">
-                                        <img src="images/arrow-right.svg"
-                                            alt="not
-                                            found">
-                                    </div>
-                                    <div class="role-content-text">
-                                        <p class="para_b">
-                                            Lorem ipsum dolor sit amet,
-                                            consectetur
-                                            adipiscing elit. Egestas orci
-                                            viverra
-                                            arcu, purus dictum ac dictumst in
-                                            quis.
-                                            Integer.
-                                        </p>
-                                    </div>
-                                </div>
-                                <button class="role_learn_more">Learn More</button>
-                            </div> -->
-                            <div id="School" class="main-role-manage-content LPC
+                            <!-- school content  -->
+                            <div id="Schooll" class="main-role-manage-content
+                                LPC
                                 active-content">
                                 <div class="role-content">
                                     <div class="role-content-icon">
@@ -895,7 +803,7 @@
                                 <div class="role_learn_more">Learn More</div>
                             </div>
                             <!-- teacher content  -->
-                            <div id="Teacher" class="main-role-manage-content
+                            <div id="Teacherl" class="main-role-manage-content
                                 LPC">
                                 <div class="role-content">
                                     <div class="role-content-icon">
@@ -987,7 +895,7 @@
                                 <div class="role_learn_more">Learn More</div>
                             </div>
                             <!-- parent content  -->
-                            <div id="Parents" class="main-role-manage-content
+                            <div id="Parentsl" class="main-role-manage-content
                                 LPC">
                                 <div class="role-content">
                                     <div class="role-content-icon">
@@ -1084,7 +992,7 @@
                                 <div class="role_learn_more">Learn More</div>
                             </div>
                             <!-- students content  -->
-                            <div id="Students" class="main-role-manage-content
+                            <div id="Studentsl" class="main-role-manage-content
                                 LPC">
                                 <div class="role-content">
                                     <div class="role-content-icon">
@@ -1169,18 +1077,21 @@
                 <div class="main-role-manage">
                     <div class="main-role-manage-heading">
                         <h1 class="role_heading">
-
                             3. <span class="role_span">Fee</span> Management
                         </h1>
                     </div>
 
-                    <div class="main-role-manage-container">
+                    <div class="main-role-manage-container" id="fmContainer">
                         <div class="main-role-manage-own-content">
                             <div class="main-role-manage-own">
                                 <!-- own -->
-                                <div class="role-own active">
+                                <div class="role-own Fee-Management activefm"
+                                    onclick="openFeeManagement(event,'Schoolfm',
+                                    '#f5f9fc','#267c26')">
                                     <div class="role-own_icon school-icon">
-                                        <img src="images/rule_own.svg" alt="not
+                                        <img class="role-own_icon_img"
+                                            src="images/rule_own.svg"
+                                            alt="not
                                             found">
 
                                     </div>
@@ -1189,7 +1100,9 @@
                                     </div>
                                 </div>
                                 <!-- teacher -->
-                                <div class="role-own">
+                                <div class="role-own Fee-Management"
+                                    onclick="openFeeManagement(event,'Teacherfm',
+                                    '#FCF6EF','#FEC952')">
                                     <div class="role-own_icon teacher-icon">
                                         <img src="images/rule_teacher.svg"
                                             alt="not
@@ -1200,7 +1113,9 @@
                                     </div>
                                 </div>
                                 <!-- parents -->
-                                <div class="role-own">
+                                <div class="role-own Fee-Management"
+                                    onclick="openFeeManagement(event,'Parentsfm',
+                                    '#FFF3F2','#FA6758')">
                                     <div class="role-own_icon parent-icon">
                                         <img src="images/rule_parent.svg"
                                             alt="not
@@ -1211,7 +1126,9 @@
                                     </div>
                                 </div>
                                 <!-- student -->
-                                <div class="role-own">
+                                <div class="role-own Fee-Management"
+                                    onclick="openFeeManagement(event,'Studentsfm',
+                                    '#F1F9FE','#62B8F3')">
                                     <div class="role-own_icon student-icon">
                                         <img src="images/rule_student.svg"
                                             alt="not
@@ -1221,11 +1138,11 @@
                                         <h4 class="name_heading">Students</h4>
                                     </div>
                                 </div>
-
                             </div>
                             <!-- rule text  -->
-
-                            <div class="main-role-manage-content
+                            <!-- school content  -->
+                            <div id="Schoolfm" class="main-role-manage-content
+                                FMC
                                 active-content">
                                 <div class="role-content">
                                     <div class="role-content-icon">
@@ -1242,37 +1159,6 @@
                                             arcu, purus dictum ac dictumst in
                                             quis.
                                             Integer.
-
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="role-content">
-                                    <div class="role-content-icon">
-                                        <img src="images/arrow-right.svg"
-                                            alt="not
-                                            found">
-                                    </div>
-                                    <div class="role-content-text">
-                                        <p class="para_b">
-                                            Lorem ipsum dolor sit amet,
-                                            consectetur
-                                            adipiscing elit. Egestas
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="role-content">
-                                    <div class="role-content-icon">
-                                        <img src="images/arrow-right.svg"
-                                            alt="not
-                                            found">
-                                    </div>
-                                    <div class="role-content-text">
-                                        <p class="para_b">
-                                            Lorem ipsum dolor sit amet,
-                                            consectetur
-                                            adipiscing elit. Egestas
                                         </p>
                                     </div>
                                 </div>
@@ -1289,14 +1175,342 @@
                                             consectetur
                                             adipiscing elit. Egestas orci
                                             viverra
-                                            arcu, purus dictum ac dictumst
+                                            arcu, purus dictum ac dictumst in
+                                            quis.
+                                            Integer.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="role-content">
+                                    <div class="role-content-icon">
+                                        <img src="images/arrow-right.svg"
+                                            alt="not
+                                            found">
+                                    </div>
+                                    <div class="role-content-text">
+                                        <p class="para_b">
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur
+                                            adipiscing elit. Egestas orci
+                                            viverra
+                                            arcu, purus dictum ac dictumst in
+                                            quis.
+                                            Integer.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="role-content">
+                                    <div class="role-content-icon">
+                                        <img src="images/arrow-right.svg"
+                                            alt="not
+                                            found">
+                                    </div>
+                                    <div class="role-content-text">
+                                        <p class="para_b">
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur
+                                            adipiscing elit. Egestas orci
+                                            viverra
+                                            arcu, purus dictum ac dictumst in
+                                            quis.
+                                            Integer.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="role-content">
+                                    <div class="role-content-icon">
+                                        <img src="images/arrow-right.svg"
+                                            alt="not
+                                            found">
+                                    </div>
+                                    <div class="role-content-text">
+                                        <p class="para_b">
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur
+                                            adipiscing elit. Egestas orci
+                                            viverra
+                                            arcu, purus dictum ac dictumst in
+                                            quis.
+                                            Integer.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="role_learn_more">Learn More</div>
+                            </div>
+                            <!-- teacher content  -->
+                            <div id="Teacherfm" class="main-role-manage-content
+                                FMC">
+                                <div class="role-content">
+                                    <div class="role-content-icon">
+                                        <img src="images/yellow_arrow.svg"
+                                            alt="not
+                                            found">
+                                    </div>
+                                    <div class="role-content-text">
+                                        <p class="para_b">
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur
+                                            adipiscing elit. Egestas orci
+                                            viverra
 
                                         </p>
                                     </div>
                                 </div>
 
+                                <div class="role-content">
+                                    <div class="role-content-icon">
+                                        <img src="images/yellow_arrow.svg"
+                                            alt="not
+                                            found">
+                                    </div>
+                                    <div class="role-content-text">
+                                        <p class="para_b">
+                                            Lorem ipsum dolor sit amet,
+                                            consecteturscing elit. Egestas orci
+                                            viverra
+                                            arcu, purus dictum ac dictumst in
+                                            quis.
+                                            Integer.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="role-content">
+                                    <div class="role-content-icon">
+                                        <img src="images/yellow_arrow.svg"
+                                            alt="not
+                                            found">
+                                    </div>
+                                    <div class="role-content-text">
+                                        <p class="para_b">
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur
+                                            adipiscing elit. Egestas orci
+                                            viverra
+                                            arcu, purus d ac dictumst in
+                                            quis.
+                                            Integer.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="role-content">
+                                    <div class="role-content-icon">
+                                        <img src="images/yellow_arrow.svg"
+                                            alt="not
+                                            found">
+                                    </div>
+                                    <div class="role-content-text">
+                                        <p class="para_b">
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur
+                                            adipisc. Egestas orci
+                                            viverra
+                                            arcu, purus dictum ac dictumst in
+                                            quis.
+                                            Integer.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="role-content">
+                                    <div class="role-content-icon">
+                                        <img src="images/yellow_arrow.svg"
+                                            alt="not
+                                            found">
+                                    </div>
+                                    <div class="role-content-text">
+                                        <p class="para_b">
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur
+                                            adipiscing elit. Egestas orci
+                                            viverra
+                                            Integer.
+                                        </p>
+                                    </div>
+                                </div>
                                 <div class="role_learn_more">Learn More</div>
                             </div>
+                            <!-- parent content  -->
+                            <div id="Parentsfm" class="main-role-manage-content
+                                FMC">
+                                <div class="role-content">
+                                    <div class="role-content-icon">
+                                        <img src="images/red_arrow.svg"
+                                            alt="not
+                                            found">
+                                    </div>
+                                    <div class="role-content-text">
+                                        <p class="para_b">
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur
+                                            adipiscing elit. Egestas orci
+                                            viverra
+                                            arcu, purus dictum ac dictumst in
+                                            quis.
+                                            Integer.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="role-content">
+                                    <div class="role-content-icon">
+                                        <img src="images/red_arrow.svg"
+                                            alt="not
+                                            found">
+                                    </div>
+                                    <div class="role-content-text">
+                                        <p class="para_b">
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur
+                                            adipiscing elit. Egestas orci
+                                            viverra
+                                            arcu, purus dictum ac dictumst in
+                                            quis.
+                                            Integer.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="role-content">
+                                    <div class="role-content-icon">
+                                        <img src="images/red_arrow.svg"
+                                            alt="not
+                                            found">
+                                    </div>
+                                    <div class="role-content-text">
+                                        <p class="para_b">
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur
+                                            adipiscing elit. Egestas orci
+                                            viverra
+                                            arcu, purus dictum ac dictumst in
+                                            quis.
+                                            Integer.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="role-content">
+                                    <div class="role-content-icon">
+                                        <img src="images/red_arrow.svg"
+                                            alt="not
+                                            found">
+                                    </div>
+                                    <div class="role-content-text">
+                                        <p class="para_b">
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur
+                                            adipiscing elit. Egestas orci
+                                            viverra
+                                            arcu, purus dictum ac dictumst in
+                                            quis.
+                                            Integer.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="role-content">
+                                    <div class="role-content-icon">
+                                        <img src="images/red_arrow.svg"
+                                            alt="not
+                                            found">
+                                    </div>
+                                    <div class="role-content-text">
+                                        <p class="para_b">
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur
+                                            adipiscing elit. Egestas orci
+                                            viverra
+                                            arcu, purus dictum ac dictumst in
+                                            quis.
+                                            Integer.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="role_learn_more">Learn More</div>
+                            </div>
+                            <!-- students content  -->
+                            <div id="Studentsfm" class="main-role-manage-content
+                                FMC">
+                                <div class="role-content">
+                                    <div class="role-content-icon">
+                                        <img src="images/blue_arrow.svg"
+                                            alt="not
+                                            found">
+                                    </div>
+                                    <div class="role-content-text">
+                                        <p class="para_b">
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur
+                                            adipiscing elit. Egestas orci
+                                            viverra
+                                            arcu, purus dictum ac dictumst in
+                                            quis.
+                                            Integer.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="role-content">
+                                    <div class="role-content-icon">
+                                        <img src="images/blue_arrow.svg"
+                                            alt="not
+                                            found">
+                                    </div>
+                                    <div class="role-content-text">
+                                        <p class="para_b">
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur
+                                            adipiscing elit. Egestas orci
+                                            viverra
+                                            arcu, purus dictum ac dictumst in
+                                            quis.
+                                            Integer.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="role-content">
+                                    <div class="role-content-icon">
+                                        <img src="images/blue_arrow.svg"
+                                            alt="not
+                                            found">
+                                    </div>
+                                    <div class="role-content-text">
+                                        <p class="para_b">
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur
+                                            adipiscing elit. Egestas orci
+                                            viverra
+                                            arcu, purus dictum ac dictumst in
+                                            quis.
+                                            Integer.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="role-content">
+                                    <div class="role-content-icon">
+                                        <img src="images/blue_arrow.svg"
+                                            alt="not
+                                            found">
+                                    </div>
+                                    <div class="role-content-text">
+                                        <p class="para_b">
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur
+                                            adipiscing elit. Egestas orci
+                                            viverra
+                                            arcu, purus dictum ac dictumst in
+                                            quis.
+                                            Integer.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="role_learn_more">Learn More</div>
+                            </div>
+
+
+
+
+
+                            <!-- add -->
                         </div>
                     </div>
 
@@ -1309,7 +1523,7 @@
                         </h1>
                     </div>
 
-                    <div class="main-role-manage-container">
+                    <div class="main-role-manage-container" id="emContainer">
                         <div class="main-role-manage-own-content reverse-row">
                             <div class="main-role-manage-own">
                                 <!-- own -->
@@ -1468,7 +1682,7 @@
                         </h1>
                     </div>
 
-                    <div class="main-role-manage-container">
+                    <div class="main-role-manage-container" id="epContainer">
                         <div class="main-role-manage-own-content">
                             <div class="main-role-manage-own">
                                 <!-- own -->

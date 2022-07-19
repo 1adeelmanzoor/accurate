@@ -13,7 +13,6 @@ const content = document.querySelectorAll(" .main-role-manage-content");
 const roleOwnDiv = document.querySelectorAll(".main-role-manage-own");
 
 // attendance tab
-
 function openAttendance(evt, roleName, color, br) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("main-role-manage-content");
@@ -25,63 +24,78 @@ function openAttendance(evt, roleName, color, br) {
     tablinks[i].className = tablinks[i].className.replace("active", "");
     tablinks[i].style.borderColor = br;
   }
-  bgColor.style.backgroundColor = color;
+
+  document.querySelector("#amContainer").style.backgroundColor = color;
   document.getElementById(roleName).style.display = "flex";
   evt.currentTarget.classList.add("active");
 }
-
 // lesson planner
-
+function openLessonPlaner(evt, roleName, color, br) {
+  var i, lptabcontent, lptablinks;
+  lptabcontent = document.getElementsByClassName("LPC");
+  for (i = 0; i < 4; i++) {
+    lptabcontent[i].style.display = "none";
+  }
+  lptablinks = document.getElementsByClassName("Lesson-Planner");
+  for (i = 0; i < lptablinks.length; i++) {
+    lptablinks[i].className = lptablinks[i].className.replace("activel", "");
+    lptablinks[i].style.borderColor = br;
+  }
+  document.querySelector("#lpContainer").style.backgroundColor = color;
+  document.getElementById(roleName).style.display = "flex";
+  evt.currentTarget.classList.add("activel");
+}
+// Fee Management
+function openFeeManagement(evt, roleName, color, br) {
+  var i, fmtabcontent, fmtablinks;
+  fmtabcontent = document.getElementsByClassName("FMC");
+  for (i = 0; i < 4; i++) {
+    fmtabcontent[i].style.display = "none";
+  }
+  fmtablinks = document.getElementsByClassName("Fee-Management");
+  for (i = 0; i < fmtablinks.length; i++) {
+    fmtablinks[i].className = fmtablinks[i].className.replace("activefm", "");
+    fmtablinks[i].style.borderColor = br;
+    debugger;
+  }
+  document.querySelector("#fmContainer").style.backgroundColor = color;
+  document.getElementById(roleName).style.display = "flex";
+  evt.currentTarget.classList.add("activefm");
+}
+//Event Management
 // function openLessonPlaner(evt, roleName, color, br) {
-//   var i, tabcontent, tablinks;
-//   tabcontent = document.getElementsByClassName("LPC");
+//   var i, lptabcontent, lptablinks;
+//   lptabcontent = document.getElementsByClassName("LPC");
 //   for (i = 0; i < 4; i++) {
-//     tabcontent[i].style.display = "none";
+//     lptabcontent[i].style.display = "none";
 //   }
-//   tablinks = document.getElementsByClassName("Lesson-Planner");
-//   for (i = 0; i < tablinks.length; i++) {
-//     tablinks[i].className = tablinks[i].className.replace("activel", "");
-//     debugger;
-//     tablinks[i].style.borderColor = br;
+//   lptablinks = document.getElementsByClassName("Lesson-Planner");
+//   for (i = 0; i < lptablinks.length; i++) {
+//     lptablinks[i].className = lptablinks[i].className.replace("activel", "");
+//     lptablinks[i].style.borderColor = br;
 //   }
-//   bgColor.style.backgroundColor = color;
+//   document.querySelector("#lpContainer").style.backgroundColor = color;
+//   document.getElementById(roleName).style.display = "flex";
+//   evt.currentTarget.classList.add("activel");
+// }
+// Exam Planner
+// function openLessonPlaner(evt, roleName, color, br) {
+//   var i, lptabcontent, lptablinks;
+//   lptabcontent = document.getElementsByClassName("LPC");
+//   for (i = 0; i < 4; i++) {
+//     lptabcontent[i].style.display = "none";
+//   }
+//   lptablinks = document.getElementsByClassName("Lesson-Planner");
+//   for (i = 0; i < lptablinks.length; i++) {
+//     lptablinks[i].className = lptablinks[i].className.replace("activel", "");
+//     lptablinks[i].style.borderColor = br;
+//   }
+//   document.querySelector("#lpContainer").style.backgroundColor = color;
 //   document.getElementById(roleName).style.display = "flex";
 //   evt.currentTarget.classList.add("activel");
 // }
 
-// roleOwn.forEach((tab, index) => {
-//   tab.addEventListener("click", () => {
-//     content.forEach((cont) => {
-//       cont.classList.remove("active-content");
-//     });
-//     roleOwn.forEach((tab) => {
-//       tab.classList.remove("active");
-//     });
-
-//     content[index].classList.add("active-content");
-//     roleOwn[index].classList.add("active");
-//   });
-// });
-
-// test start
-
-// function toggleItem(elem) {
-//   for (var i = 0; i < 4; i++) {
-//     elem[i].addEventListener("click", function (e) {
-//       for (var i = 0; i < 4; i++) {}
-//       e.preventDefault();
-//     });
-//   }
-// }
-// toggleItem(document.querySelectorAll(".role-own"));
-
-// test end
-
-// console.log(roleOwn);
-// console.log(content);
-
-// toggle select list
-
+// nav select
 navSelect.onclick = function () {
   list.classList.toggle("hide");
   arrowUpDown.classList.toggle("rotate");

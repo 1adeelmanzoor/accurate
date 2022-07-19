@@ -478,8 +478,18 @@ body {
   border: 1px solid #267c26;
 }
 .activel {
-  border: 1px solid #fec952;
+  border: 1px solid #267c26;
 }
+.activefm {
+  border: 1px solid #267c26;
+}
+
+/* .activel {
+  border: 1px solid #267c26;
+} */
+/* .activel {
+  border: 1px solid #267c26;
+}  */
 
 .school-icon {
   background: var(--bg-primary-green);
