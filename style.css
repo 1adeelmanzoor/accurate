@@ -483,13 +483,12 @@ body {
 .activefm {
   border: 1px solid #267c26;
 }
-
-/* .activel {
+.activeem {
   border: 1px solid #267c26;
-} */
-/* .activel {
+}
+.activeep {
   border: 1px solid #267c26;
-}  */
+}
 
 .school-icon {
   background: var(--bg-primary-green);
