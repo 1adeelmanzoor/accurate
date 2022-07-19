@@ -551,7 +551,6 @@ body {
 }
 .role_learn_more {
   cursor: pointer;
-
   font-weight: 500;
   font-size: 16px;
   line-height: 28px;
@@ -561,7 +560,7 @@ body {
   margin-top: auto;
   place-self: flex-end;
   border: none;
-  background: rgb(245, 249, 252);
+  /* background: rgb(245, 249, 252); */
 
   width: 89px;
   height: 28px;
